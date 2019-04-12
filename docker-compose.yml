@@ -2,7 +2,9 @@ version: '2.1'
 
 services:
   dockerworkspace:
-    image: dockerworkspace
+    image: yyxjcc/nginx:1.14.2
     build: .
+    volumes: 
+      -
     ports:
-      - :
+      - 80:80
